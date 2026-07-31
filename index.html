@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+
+        SmartTransit | Public Transport Information System
+
+    </title>
+
+    <!-- CSS -->
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet" href="css/responsive.css">
+
+
+    <!-- Google Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!--================ HEADER ================-->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+
+                <i class="fa-solid fa-bus"></i>
+
+                <h2>SmartTransit</h2>
+
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a class="active" href="#">Home</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="services.html">Services</a></li>
+
+                <li><a href="gallery.html">Gallery</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+                 <li><a href="ticket.html">Ticket</a></li>
+
+
+            </ul>
+
+            <div class="nav-buttons">
+
+                <button class="login-btn">
+
+                    Login
+
+                </button>
+
+                <button class="signup-btn">
+
+                    Sign Up
+
+                </button>
+
+            </div>
+
+            <div class="menu">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!--================ HERO ================-->
+
+    <section class="hero">
+
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+
+            <div class="hero-text">
+
+                <span>
+
+                    🚍 India's Smart Transport Platform
+
+                </span>
+
+                <h1>
+
+                    Travel Across India
+
+                    <br>
+
+                    <strong>
+
+                        Smarter • Faster • Safer
+
+                    </strong>
+
+                </h1>
+
+                <p>
+
+                    Book buses, metro, trains and taxis from one beautiful platform.
+
+                </p>
+
+            </div>
+
+            <!--================ SEARCH BOX ================-->
+
+            <div class="search-box">
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <div>
+
+                        <label>
+
+                            From
+
+                        </label>
+
+                        <input type="text" id="from" placeholder="Enter Departure City">
+
+                    </div>
+
+                </div>
+
+                <div class="swap">
+
+                    <i class="fa-solid fa-right-left"></i>
+
+                </div>
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <div>
+
+                        <label>
+
+                            To
+
+                        </label>
+
+                        <input type="text" id="to" placeholder="Enter Final Destination">
+                    </div>
+
+                </div>
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-calendar-days"></i>
+
+                    <div>
+
+                        <label>
+
+                            Journey Date
+
+                        </label>
+
+                        <input type="date" id="journeyDate">
+
+                    </div>
+
+                </div>
+
+                <button class="search-btn">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    Search
+
+                </button>
+
+            </div>
+
+            <!-- Search Results -->
+
+            <div id="searchResults">
+                <section class="search-results-section">
+
+                </section>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--================ TRANSPORT TYPES ================-->
+
+    <section class="transport">
+
+        <div class="section-title">
+
+            <h2>
+
+                Choose Your Transport
+
+            </h2>
+
+            <p>
+
+                Fast, Safe & Comfortable
+
+            </p>
+
+        </div>
+
+        <div class="transport-grid">
+
+            <div class="transport-card">
+
+                <img src="images/bus1.jpg">
+
+                <h3>
+
+                    Bus
+
+                </h3>
+
+                <p>
+
+                    500+ Routes Available
+
+                </p>
+
+            </div>
+
+            <div class="transport-card">
+
+                <img src="images/metro.jpg">
+
+                <h3>
+
+                    Metro
+
+                </h3>
+
+                <p>
+
+                    City Transport
+
+                </p>
+
+            </div>
+
+            <div class="transport-card">
+
+                <img src="images/train.jpg">
+
+                <h3>
+
+                    Train
+
+                </h3>
+
+                <p>
+
+                    Across India
+
+                </p>
+
+            </div>
+
+            <div class="transport-card">
+
+                <img src="images/bus2.jpg">
+
+                <h3>
+
+                    Luxury Bus
+
+                </h3>
+
+                <p>
+
+                    Premium Travel
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--================ POPULAR ROUTES ================-->
+
+    <section class="routes">
+
+        <div class="section-title">
+
+            <h2>
+
+                🔥 Popular Routes
+
+            </h2>
+
+        </div>
+
+        <div class="route-grid">
+
+            <div class="route-card">
+
+                <img src="images/bus1.jpg">
+
+                <div class="route-info">
+
+                    <h3>
+
+                        Jaipur → Delhi
+
+                    </h3>
+
+                    <p>
+
+                        5 hr 20 min
+
+                    </p>
+
+                    <h4>
+
+                        ₹399
+
+                    </h4>
+
+                    <button>
+
+                        Book Now
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="route-card">
+
+                <img src="images/bus2.jpg">
+
+                <div class="route-info">
+
+                    <h3>
+
+                        Ajmer → Udaipur
+
+                    </h3>
+
+                    <p>
+
+                        4 hr 15 min
+
+                    </p>
+
+                    <h4>
+
+                        ₹349
+
+                    </h4>
+
+                    <button>
+
+                        Book Now
+
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="route-card">
+
+                <img src="images/train.jpg" alt="Train">
+
+                <div class="route-info">
+
+                    <h3>
+
+                        Jaipur → Mumbai
+
+                    </h3>
+
+                    <p>
+
+                        12 hr 30 min
+
+                    </p>
+
+                    <h4>
+
+                        ₹899
+
+                    </h4>
+
+                    <button>
+
+                        Book Now
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--==================== OFFERS ====================-->
+
+    <section class="offers">
+
+        <div class="section-title">
+
+            <h2>🎁 Exclusive Offers</h2>
+
+            <p>Save More On Every Journey</p>
+
+        </div>
+
+        <div class="offer-container">
+
+            <div class="offer-card">
+
+                <img src="images/offer.jpg" alt="Offer">
+
+                <div class="offer-text">
+
+                    <span>LIMITED OFFER</span>
+
+                    <h2>30% OFF</h2>
+
+                    <p>On Luxury Bus Tickets</p>
+
+                    <button>
+
+                        Claim Offer
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="offer-card">
+
+                <img src="images/offer.jpg" alt="Offer">
+
+                <div class="offer-text">
+
+                    <span>FIRST BOOKING</span>
+
+                    <h2>₹150 OFF</h2>
+
+                    <p>Use Code SMART150</p>
+
+                    <button>
+
+                        Get Coupon
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--==================== WHY CHOOSE US ====================-->
+
+    <section class="why-us">
+
+        <div class="why-left">
+
+            <img src="images/bus2.jpg" alt="Bus">
+
+        </div>
+
+        <div class="why-right">
+
+            <span class="small-title">
+
+                WHY SMARTTRANSIT
+
+            </span>
+
+            <h2>
+
+                Travel Without Worries
+
+            </h2>
+
+            <p>
+
+                SmartTransit provides buses, metro, railway and taxi information on one platform with a modern and
+                user-friendly experience.
+
+            </p>
+
+            <div class="features">
+
+                <div class="feature-box">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <h4>Live Routes</h4>
+
+                </div>
+
+                <div class="feature-box">
+
+                    <i class="fa-solid fa-ticket"></i>
+
+                    <h4>Easy Booking</h4>
+
+                </div>
+
+                <div class="feature-box">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                    <h4>Safe Journey</h4>
+
+                </div>
+
+                <div class="feature-box">
+
+                    <i class="fa-solid fa-headset"></i>
+
+                    <h4>24×7 Support</h4>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--==================== STATISTICS ====================-->
+
+    <section class="statistics">
+
+        <div class="stat-card">
+
+            <h2 class="counter" data-target="500">
+
+                0
+
+            </h2>
+
+            <p>
+
+                Bus Routes
+
+            </p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2 class="counter" data-target="250">
+
+                0
+
+            </h2>
+
+            <p>
+
+                Transport Partners
+
+            </p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2 class="counter" data-target="12000">
+
+                0
+
+            </h2>
+
+            <p>
+
+                Happy Customers
+
+            </p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2 class="counter" data-target="24">
+
+                0
+
+            </h2>
+
+            <p>
+
+                Hours Support
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!--==================== GALLERY ====================-->
+
+    <section class="gallery">
+
+        <div class="section-title">
+
+            <h2>
+
+                📸 Travel Gallery
+
+            </h2>
+
+        </div>
+
+        <div class="gallery-grid">
+
+            <img src="images/gallery1.jpg" alt="Gallery">
+
+            <img src="images/gallery2.jpg" alt="Gallery">
+
+            <img src="images/bus1.jpg" alt="Bus">
+
+            <img src="images/train.jpg" alt="Train">
+
+        </div>
+
+    </section>
+
+    <!--==================== TESTIMONIALS ====================-->
+
+    <section class="testimonials">
+
+        <div class="section-title">
+
+            <h2>
+
+                ❤️ What Our Users Say
+
+            </h2>
+
+        </div>
+
+        <div class="testimonial-container">
+
+            <div class="testimonial-card">
+
+                <i class="fa-solid fa-quote-left"></i>
+
+                <p>
+
+                    Amazing interface and very easy to use. It feels like a real booking website.
+
+                </p>
+
+                <h3>
+
+                    Priya Sharma
+
+                </h3>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <i class="fa-solid fa-quote-left"></i>
+
+                <p>
+
+                    Beautiful design with smooth animations and responsive layout.
+
+                </p>
+
+                <h3>
+
+                    Rahul Mehta
+
+                </h3>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <i class="fa-solid fa-quote-left"></i>
+
+                <p>
+
+                    Best transport information website I've used for a college project.
+
+                </p>
+
+                <h3>
+
+                    Anjali Verma
+
+                </h3>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!--==================== DOWNLOAD APP ====================-->
+
+    <section class="download-app">
+
+        <div class="download-content">
+
+            <div class="download-text">
+
+                <span>SMART TRANSIT APP</span>
+
+                <h2>Travel Anywhere, Anytime</h2>
+
+                <p>
+
+                    Download the SmartTransit app to book buses, trains,
+                    metro and taxi services with a beautiful and easy interface.
+
+                </p>
+
+                <div class="app-buttons">
+
+                    <button class="play-store">
+
+                        <i class="fa-brands fa-google-play"></i>
+
+                        Google Play
+
+                    </button>
+
+                    <button class="app-store">
+
+                        <i class="fa-brands fa-apple"></i>
+
+                        App Store
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="download-image">
+
+                <img src="images/bus1.jpg" alt="Mobile App">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--==================== NEWSLETTER ====================-->
+
+    <section class="newsletter">
+
+        <div class="newsletter-content">
+
+            <h2>
+
+                Subscribe For Travel Updates
+
+            </h2>
+
+            <p>
+
+                Get the latest transport news, offers and travel tips.
+
+            </p>
+
+            <form class="newsletter-form">
+
+                <input type="email" placeholder="Enter your Email Address" required>
+
+                <button type="submit">
+
+                    Subscribe
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!--==================== FOOTER ====================-->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-box">
+
+                <div class="footer-logo">
+
+                    <i class="fa-solid fa-bus"></i>
+
+                    <h2>SmartTransit</h2>
+
+                </div>
+
+                <p>
+
+                    SmartTransit is a modern Public Transport Information
+                    System that provides information about buses, trains,
+                    metro and taxi services.
+
+                </p>
+
+                <div class="social-icons">
+
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                </div>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="services.html">Services</a></li>
+
+                    <li><a href="gallery.html">Gallery</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>Transport</h3>
+
+                <ul>
+
+                    <li><a href="#">Bus Routes</a></li>
+
+                    <li><a href="#">Metro</a></li>
+
+                    <li><a href="#">Railway</a></li>
+
+                    <li><a href="#">Taxi</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>Contact</h3>
+
+                <p>
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Jaipur, Rajasthan
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    +91 7357413300
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    support@smarttransit.com
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 SmartTransit | Public Transport Information System
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!--==================== FLOATING BUTTONS ====================-->
+
+    <button id="backToTop">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+    <button id="darkMode">
+
+        <i class="fa-solid fa-moon"></i>
+
+    </button>
+
+    <button id="chatButton">
+
+        <i class="fa-solid fa-comments"></i>
+
+    </button>
+
+    <!--==================== JAVASCRIPT ====================-->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

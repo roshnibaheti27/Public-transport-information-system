@@ -1,0 +1,361 @@
+/*==========================================
+            LARGE TABLETS
+==========================================*/
+
+@media(max-width:1200px){
+
+.hero-text h1{
+
+    font-size:56px;
+    line-height:70px;
+
+}
+
+.transport-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.route-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.gallery-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.statistics{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.footer-container{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+/*==========================================
+            TABLETS
+==========================================*/
+
+@media(max-width:992px){
+
+.nav-links{
+
+    display:none;
+
+}
+
+.nav-buttons{
+
+    display:none;
+
+}
+
+.menu{
+
+    display:block;
+
+    cursor:pointer;
+
+}
+
+.hero{
+
+    height:auto;
+
+    padding:150px 8% 80px;
+
+}
+
+.hero-text h1{
+
+    font-size:46px;
+    line-height:60px;
+
+}
+
+.hero-text p{
+
+    font-size:18px;
+
+}
+
+.search-box{
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.input-box{
+
+    width:100%;
+
+}
+
+.search-btn{
+
+    width:100%;
+
+}
+
+.transport-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.route-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.offer-container{
+
+    grid-template-columns:1fr;
+
+}
+
+.why-us{
+
+    grid-template-columns:1fr;
+
+}
+
+.features{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.download-content{
+
+    grid-template-columns:1fr;
+
+}
+
+.testimonial-container{
+
+    grid-template-columns:1fr;
+
+}
+
+.gallery-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.newsletter-form{
+
+    flex-direction:column;
+
+    border-radius:20px;
+
+}
+
+.newsletter-form input{
+
+    width:100%;
+
+}
+
+.newsletter-form button{
+
+    width:100%;
+
+}
+
+}
+/*==========================================
+            MOBILE DEVICES
+==========================================*/
+
+@media(max-width:768px){
+
+.section-title h2{
+
+    font-size:34px;
+
+}
+
+.hero-text h1{
+
+    font-size:38px;
+    line-height:48px;
+
+}
+
+.hero-text span{
+
+    font-size:14px;
+
+}
+
+.search-box{
+
+    padding:20px;
+
+}
+
+.transport-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.route-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.offer-container{
+
+    grid-template-columns:1fr;
+
+}
+
+.features{
+
+    grid-template-columns:1fr;
+
+}
+
+.statistics{
+
+    grid-template-columns:1fr;
+
+}
+
+.gallery-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.footer-container{
+
+    grid-template-columns:1fr;
+
+}
+
+.app-buttons{
+
+    flex-direction:column;
+
+}
+
+.app-buttons button{
+
+    width:100%;
+
+}
+
+.bus-result{
+
+    flex-direction:column;
+
+}
+
+.bus-result img{
+
+    width:100%;
+    height:220px;
+
+}
+
+}
+
+
+/*==========================================
+            SMALL MOBILES
+==========================================*/
+
+@media(max-width:480px){
+
+.navbar{
+
+    padding:15px 5%;
+
+}
+
+.hero{
+
+    padding:130px 5% 60px;
+
+}
+
+.hero-text h1{
+
+    font-size:30px;
+    line-height:40px;
+
+}
+
+.hero-text p{
+
+    font-size:16px;
+
+}
+
+.section-title h2{
+
+    font-size:28px;
+
+}
+
+.route-info h3{
+
+    font-size:20px;
+
+}
+
+.route-info h4{
+
+    font-size:24px;
+
+}
+
+.download-text h2{
+
+    font-size:32px;
+
+}
+
+.newsletter h2{
+
+    font-size:32px;
+
+}
+
+.footer-bottom{
+
+    font-size:14px;
+
+}
+
+#backToTop,
+#darkMode,
+#chatButton{
+
+    width:48px;
+    height:48px;
+    right:15px;
+
+}
+
+}

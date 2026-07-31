@@ -1,0 +1,669 @@
+/*==============================
+        SERVICES HERO
+==============================*/
+
+.services-hero{
+    width:100%;
+    height:90vh;
+    background:
+    linear-gradient(rgba(0,0,0,.65),
+    rgba(0,0,0,.65)),
+    url("../images/services-banner.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-overlay{
+    width:100%;
+}
+
+.hero-content{
+    width:80%;
+    margin:auto;
+    color:#fff;
+}
+
+.hero-tag{
+    display:inline-block;
+    padding:12px 30px;
+    background:#00b894;
+    border-radius:50px;
+    font-size:15px;
+    margin-bottom:20px;
+}
+
+.hero-content h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    width:70%;
+    margin:auto;
+    line-height:32px;
+    font-size:18px;
+    margin-bottom:35px;
+}
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.primary-btn{
+    background:#00b894;
+    color:#fff;
+    padding:15px 35px;
+    border-radius:50px;
+    text-decoration:none;
+    transition:.4s;
+}
+
+.primary-btn:hover{
+    background:#019875;
+    transform:translateY(-5px);
+}
+
+.secondary-btn{
+    border:2px solid #fff;
+    color:#fff;
+    padding:15px 35px;
+    border-radius:50px;
+    text-decoration:none;
+    transition:.4s;
+}
+
+.secondary-btn:hover{
+    background:#fff;
+    color:#222;
+}
+
+/*==============================
+        SECTION TITLE
+==============================*/
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title h2{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.section-title p{
+    color:#666;
+    width:60%;
+    margin:auto;
+    line-height:30px;
+}
+
+/*==============================
+        SERVICES
+==============================*/
+
+.services{
+    padding:100px 10%;
+    background:#fff;
+}
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.service-card{
+    background:#fff;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.service-card:hover{
+    transform:translateY(-10px);
+    background:#00b894;
+    color:#fff;
+}
+
+.service-card:hover i,
+.service-card:hover p,
+.service-card:hover a{
+    color:#fff;
+}
+
+.service-card i{
+    font-size:50px;
+    color:#00b894;
+    margin-bottom:20px;
+}
+
+.service-card h3{
+    margin-bottom:15px;
+    font-size:26px;
+}
+
+.service-card p{
+    color:#666;
+    line-height:28px;
+    margin-bottom:20px;
+}
+
+.service-card a{
+    color:#00b894;
+    text-decoration:none;
+    font-weight:600;
+}
+/*==================================
+        TICKET BOOKING
+==================================*/
+
+.ticket-booking{
+    padding:100px 10%;
+    background:#f8fbff;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.booking-image img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.booking-content span{
+    color:#00b894;
+    font-weight:600;
+    letter-spacing:2px;
+}
+
+.booking-content h2{
+    font-size:42px;
+    margin:20px 0;
+    color:#222;
+}
+
+.booking-content p{
+    color:#666;
+    line-height:30px;
+    margin-bottom:25px;
+}
+
+.booking-content ul{
+    list-style:none;
+    margin-bottom:35px;
+}
+
+.booking-content ul li{
+    margin:15px 0;
+    color:#444;
+    font-size:17px;
+}
+
+.booking-content ul li i{
+    color:#00b894;
+    margin-right:10px;
+}
+
+/*==================================
+        LIVE TRACKING
+==================================*/
+
+.tracking-section{
+    padding:100px 10%;
+    background:#fff;
+}
+
+.tracking-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.tracking-card{
+    background:#fff;
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.tracking-card:hover{
+    transform:translateY(-10px);
+    background:#00b894;
+    color:#fff;
+}
+
+.tracking-card:hover i,
+.tracking-card:hover p{
+    color:#fff;
+}
+
+.tracking-card i{
+    font-size:45px;
+    color:#00b894;
+    margin-bottom:20px;
+}
+
+.tracking-card h3{
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.tracking-card p{
+    color:#666;
+    line-height:28px;
+}
+
+/*==================================
+      TRANSPORT OPTIONS
+==================================*/
+
+.transport-options{
+    padding:100px 10%;
+    background:#f8fbff;
+}
+
+.options-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.option-card{
+    background:#fff;
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.option-card:hover{
+    transform:translateY(-10px);
+    background:#0984e3;
+    color:#fff;
+}
+
+.option-card:hover i,
+.option-card:hover p{
+    color:#fff;
+}
+
+.option-card i{
+    font-size:48px;
+    color:#0984e3;
+    margin-bottom:20px;
+}
+
+.option-card h3{
+    font-size:24px;
+    margin-bottom:15px;
+}
+
+.option-card p{
+    color:#666;
+    line-height:28px;
+}
+
+/*==================================
+        PRICING SECTION
+==================================*/
+
+.pricing{
+    padding:100px 10%;
+    background:#fff;
+}
+
+.pricing-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.price-card{
+    background:#fff;
+    padding:45px 35px;
+    text-align:center;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.price-card:hover{
+    transform:translateY(-12px);
+}
+
+.price-card.featured{
+    background:linear-gradient(135deg,#00b894,#0984e3);
+    color:#fff;
+}
+
+.price-card.featured ul li,
+.price-card.featured span{
+    color:#fff;
+}
+
+.price-card h3{
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+.price-card h1{
+    font-size:50px;
+    margin-bottom:25px;
+}
+
+.price-card span{
+    font-size:18px;
+    color:#666;
+}
+
+.price-card ul{
+    list-style:none;
+    margin-bottom:30px;
+}
+
+.price-card ul li{
+    margin:15px 0;
+    color:#555;
+}
+
+.price-card .primary-btn{
+    display:inline-block;
+}
+/*==================================
+        TESTIMONIALS
+==================================*/
+
+.testimonials{
+    padding:100px 10%;
+    background:#f8fbff;
+}
+
+.testimonial-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.testimonial-card{
+    background:#fff;
+    padding:35px;
+    text-align:center;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.testimonial-card:hover{
+    transform:translateY(-12px);
+}
+
+.testimonial-card img{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:20px;
+    border:5px solid #00b894;
+}
+
+.testimonial-card h3{
+    font-size:24px;
+    margin-bottom:8px;
+}
+
+.testimonial-card span{
+    color:#00b894;
+    font-weight:600;
+    display:block;
+    margin-bottom:18px;
+}
+
+.testimonial-card p{
+    color:#666;
+    line-height:28px;
+    margin-bottom:20px;
+}
+
+.stars{
+    color:#FFD700;
+    font-size:18px;
+}
+
+/*==================================
+      CALL TO ACTION
+==================================*/
+
+.contact-banner{
+    padding:90px 10%;
+    text-align:center;
+    background:linear-gradient(135deg,#00b894,#0984e3);
+    color:#fff;
+}
+
+.contact-banner h2{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.contact-banner p{
+    width:65%;
+    margin:auto;
+    line-height:30px;
+    margin-bottom:35px;
+}
+
+.contact-btn{
+    display:inline-block;
+    padding:16px 40px;
+    background:#fff;
+    color:#00b894;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.4s;
+}
+
+.contact-btn:hover{
+    transform:translateY(-5px);
+}
+
+/*==================================
+        NEWSLETTER
+==================================*/
+
+.newsletter{
+    padding:90px 10%;
+    background:#fff;
+    text-align:center;
+}
+
+.newsletter h2{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.newsletter p{
+    color:#666;
+    margin-bottom:30px;
+}
+
+.newsletter-form{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.newsletter-form input{
+    width:420px;
+    max-width:100%;
+    padding:16px;
+    border:1px solid #ddd;
+    border-radius:50px;
+    outline:none;
+}
+
+.newsletter-form button{
+    padding:16px 35px;
+    border:none;
+    border-radius:50px;
+    background:#00b894;
+    color:#fff;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.newsletter-form button:hover{
+    background:#019875;
+}
+
+/*==================================
+           FOOTER
+==================================*/
+
+.footer-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:40px;
+    background:#222;
+    color:#fff;
+    padding:70px 10%;
+}
+
+.footer-box h2,
+.footer-box h3{
+    margin-bottom:20px;
+}
+
+.footer-box p{
+    color:#ddd;
+    line-height:28px;
+}
+
+.footer-box ul{
+    list-style:none;
+}
+
+.footer-box ul li{
+    margin-bottom:12px;
+}
+
+.footer-box ul li a{
+    color:#ddd;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer-box ul li a:hover{
+    color:#00b894;
+}
+
+.footer-bottom{
+    background:#111;
+    color:#fff;
+    text-align:center;
+    padding:18px;
+}
+
+/*==================================
+        RESPONSIVE
+==================================*/
+
+@media(max-width:992px){
+
+.services-grid,
+.tracking-grid,
+.options-grid,
+.pricing-grid,
+.testimonial-grid,
+.footer-container,
+.ticket-booking{
+    grid-template-columns:1fr;
+}
+
+.ticket-booking{
+    display:grid;
+}
+
+.hero-content h1{
+    font-size:42px;
+}
+
+.hero-content p,
+.section-title p,
+.contact-banner p{
+    width:100%;
+}
+
+}
+
+@media(max-width:768px){
+
+.services-hero{
+    height:75vh;
+}
+
+.hero-content h1{
+    font-size:34px;
+}
+
+.hero-buttons{
+    flex-direction:column;
+    align-items:center;
+}
+
+.contact-banner h2{
+    font-size:32px;
+}
+
+.newsletter h2{
+    font-size:30px;
+}
+
+.newsletter-form{
+    flex-direction:column;
+}
+
+.newsletter-form input,
+.newsletter-form button{
+    width:100%;
+}
+
+}
+
+/*==================================
+      SMOOTH ANIMATIONS
+==================================*/
+
+.service-card,
+.tracking-card,
+.option-card,
+.price-card,
+.testimonial-card{
+    transition:all .4s ease;
+}
+
+.service-card:hover,
+.tracking-card:hover,
+.option-card:hover,
+.price-card:hover,
+.testimonial-card:hover{
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
